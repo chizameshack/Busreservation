@@ -2,8 +2,9 @@
 // for the customer.
 // This program provides an interactive GUI which facilitates the administrator as well as the 
 // customer to use the software effectively.
-//Username for admin : VRL , SUGAMA , DURGAMBA
-//Password : vrl1234,sugama1234,durgamba1234
+//Username for admin : VRL ,FEDRISH, MPAWE
+//Password :NIT/BIT/2018/595,MWANZA
+package bus;
 import java.io.*;
 import java.util.*;
 
@@ -46,34 +47,6 @@ abstract class bus //Class from which Sugama,Vrl and Durgamba classes are derive
  abstract public void search();
  abstract public void getprice();
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -156,36 +129,7 @@ class Sugama extends bus implements Tickethandler , Serializable
         this.routeno = str;
     }
 
-  /*  @Override
-  public void search()
-    {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 
-    @Override
-    public void getprice()
-    {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void bookticket()
-    {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void cancelticket()
-    {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void displayticket()
-    {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }*/
-    @Override
     public void createseatmatrix(int rows,int columns)//method to create the seat matrix of a given bus
     {
       Scanner scan = new Scanner(System.in);
@@ -233,15 +177,6 @@ public Boolean haslight()// to check if the bus provides a reading light
 
 public void displayall() // method to display the details of the bus
 {
-
-       /*  System.out.println(" Bus type :"+type);
-         System.out.println(" Source :"+source);
-         System.out.println(" Destination :"+destination);
-         System.out.println("Start Time :"+starttime);
-         System.out.println("End Time :"+endtime);
-         System.out.println("Route no"+routeno);
-         System.out.println("Unique Key"+key);
-         System.out.println("Price per ticket"+price);*/
          displayseatmatrix();
 }
 public void displayseatmatrix() //method to display the seat matrix
@@ -978,38 +913,7 @@ public class BusMod
         Scanner scan = new Scanner(System.in);
         int i;
         int choice;
-       // do
-        //{
-        /*  System.out.println("1. Vrl ");
-          System.out.println("2. Sugama");
-          System.out.println("3. Durgamba");
-          System.out.println("4. Exit");
-          System.out.println("Enter your choice ");*/
-       //   i = scan.nextInt();
-         /* switch(i)
-          {
-              case 1:
-              vrladminmenu();
-              break;
-              case 2:
-              sugadminmenu();
-              break;
-              case 3:
-              duradminmenu();
-              break;
-
-
-
-          }
-        }while(i<=3);
-*/
-
-       }
-
-
-
-
-
+     
 
  public static void vrladminmenu() throws IOException, ClassNotFoundException
     {
@@ -1024,12 +928,7 @@ public class BusMod
 
         do
         {
-        /*  System.out.println("1.Add a new bus ");
-          System.out.println("2.Modify the details of existing bus");
-          System.out.println("3.Remove a bus");
-          System.out.println("4.Display a list of all the buses");
-          System.out.println("5. Exit");
-          System.out.println("Enter your choice ");*/
+      
           i = scan.nextInt();
           switch(i)
           {
@@ -1069,13 +968,7 @@ public class BusMod
           objectinputstream .close();
           for(i = 0;i<readCase.size();i++)
           {
-           /* System.out.println(readCase.get(i).type);
-            System.out.println(readCase.get(i).source);
-            System.out.println(readCase.get(i).destination);
-            System.out.println(readCase.get(i).starttime);
-            System.out.println(readCase.get(i).endtime);
-            System.out.println(readCase.get(i).key);
-            System.out.println(readCase.get(i).price);*/
+          
             readCase.get(i).displayseatmatrix();
           }
           
@@ -1107,12 +1000,7 @@ public class BusMod
 
         do
         {
-          /*System.out.println("1.Add a new bus ");
-          System.out.println("2.Modify the details of existing bus");
-          System.out.println("3.Remove a bus");
-          System.out.println("4.Display a list of all the buses");
-          System.out.println("5. Exit");
-          System.out.println("Enter your choice ");*/
+        
           i = scan.nextInt();
           switch(i)
           {
@@ -1188,12 +1076,7 @@ public class BusMod
 
         do
         {
-         /* System.out.println("1.Add a new bus ");
-          System.out.println("2.Modify the details of existing bus");
-          System.out.println("3.Remove a bus");
-          System.out.println("4.Display a list of all the buses");
-          System.out.println("5. Exit");
-          System.out.println("Enter your choice ");*/
+       
           i = scan.nextInt();
           switch(i)
           {
@@ -1400,15 +1283,7 @@ public class BusMod
 
         do
         {
-         /* System.out.println("1. Modify the type of bus ");
-          System.out.println("2. Modify the source ");
-          System.out.println("3. Modify the destination ");
-          System.out.println("4. Modify the start time");
-          System.out.println("5. Modify the end time ");
-          System.out.println("6. Modify the price per ticket ");
-          System.out.println("7. Modify the seat matrix");
-          System.out.println("8. Exit");
-          System.out.println("Enter your choice ");*/
+      
           i = scan1.nextInt();
 
           switch(i)
