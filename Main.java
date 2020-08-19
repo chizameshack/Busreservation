@@ -1,4 +1,4 @@
-package bus;
+
 import java.awt.*;
 import java.awt.event.*;
 import java.io.*;
@@ -130,18 +130,20 @@ public class Main extends JFrame
         list2.setEditable(true);
         list2.addActionListener(listener2);   
       
-        //windowContent.add(patternList);
-        //windowContent.add(l2);
-        //windowContent.add(list2);
-        //windowContent.add(dateList);
+        windowContent.add(patternList);
+        windowContent.add(l2);
+        windowContent.add(list2);
+        windowContent.add(dateList);
+        
         j2.add(patternList);
         j2.add(l2);
         j2.add(list2);
         j2.add(dateList);
         
-        //  windowContent.add(confirm);
-       // windowContent.add(cancel);
-        // windowContent.add(admin);
+          windowContent.add(confirm);
+          windowContent.add(cancel);
+          windowContent.add(admin);
+          
         j1.add(confirm);
          j1.add(cancel);
          j1.add(admin);
@@ -152,8 +154,8 @@ public class Main extends JFrame
         frame.add(j1,BorderLayout.SOUTH);
         frame.setSize(X,Y);
         frame.setVisible(true);//to display the frame
-        frame.setBounds(0,0,2*X,Y-630);
-        frame.setIconImage(new ImageIcon("C:\\Rohit\\Java Stuff\\NetBeans\\busmodfinal\\bus.jpg").getImage());   
+        frame.setBounds(0,0,1*X,Y-630);
+        frame.setIconImage(new ImageIcon("Rohit\\Java Stuff\\NetBeans\\busmodfinal\\bus.jpg").getImage());   
        
     }
     private class ButtonHandler implements ActionListener
